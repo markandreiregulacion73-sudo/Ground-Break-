@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+@keyframes color-glow {
+    0% { color: #d9534f; }
+    33% { color: #5bc0de; }
+    66% { color: #5cb85c; }
+    100% { color: #d9534f; }
+}
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+    color: #222;
+    margin: 50px 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, gold, #ffd966);
+}
+
+nav a {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 30px;
+}
+
+nav {
+    background: grey;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 16px 15px;
+}
+
+nav a:hover {
+    background: black;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.container img.main {
+    width: 600px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.5);
+}
+
+.container .paragraph-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    gap: 20px;
+}
+
+.container p {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 2;
+    color: #222;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.4);
+    text-align: justify;
+}
+
+.highlight {
+    font-size: 28px;
+    font-weight: bold;
+    animation: color-glow 3s infinite linear;
+}
+
+.container img.larva {
+    width: 300px;
+    height: auto;
+    opacity: 0.9;
+    border-radius: 10px;
+    align-self: center;
+}
+
+@media (max-width:1024px){
+    .container img.main {
+        width: 500px;
+    }
+    .container p {
+        font-size: 24px;
+    }
+    .container img.larva {
+        width: 250px;
+    }
+}
+
+@media (max-width:768px){
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container img.main {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .container .paragraph-container {
+        max-width: 100%;
+    }
+
+    .container img.larva {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .container p {
+        font-size: 20px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+}
+</style>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ground Break</title>
+</head>
+<body>
+<nav>
+    <img src="GroundBreak.png" style="width:180px;height:130px;">
+    <a href="Home.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Services.html">Services</a>
+    <a href="Contact.html">Contact</a>
+</nav>
+
+<div class="container">
+   <div class="paragraph-container">
+       <!-- removed paragraph and larva -->
+   </div>
+</div>
+
+<center><h1>About us</h1></center>
+   <div class="wrapper">
+    <center><img src="groundbr.jpg" alt="" width="400" height="400"> </center>
+    <div class="intro">
+       <center><p>
+        Welcome to Ground Break Billiards Cafe a place where you can relax, have fun, and spend real quality time with family and friends.
+
+Founded on October 31, 2024 by Froilan Garcia and Shine Basillio, Ground Break was created to be a safe and welcoming space for everyone. We believe that time spent together matters, so we built a café where people can connect through simple moments, laughter, and shared experiences.
+
+We’re more than just a billiard café. Whether you’re playing a casual game, singing your heart out in karaoke, or enjoying a meal together, there’s something here for everyone. Our VIP rooms and all-day breakfast make it easy for families, students, and groups to feel comfortable and at home.
+       </p>
+       </center>
+   </div>
+
+
+
+</body>
+</html>
